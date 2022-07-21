@@ -1,0 +1,300 @@
+:root {
+  --main-background-color: #f5f5f5;
+  --primary-text-color: #212121;
+  --secondery-text-color: #757575;
+  --active-text-color: #2196f3;
+  --text-logo: #000000;
+  --text-hero: #ffffff;
+  --team-background-color: #f5f4fa;
+}
+
+body {
+  font-family: 'roboto', sans-serif;
+  color: var(--primary-text-color);
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid tomato;
+}
+
+/* Хедер */
+.header {
+  background-color: var(--text-hero);
+}
+
+/* Навигация */
+
+.link.nav {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+/* Логотип */
+
+.aссent {
+  color: var(--active-text-color);
+  font-family: 'raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo-head {
+  font-family: 'raleway';
+  color: var(--text-logo);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo-head:hover,
+.logo-head:focus {
+  color: var(--active-text-color);
+}
+
+/* Cсылки контактов хедера */
+
+.contacts {
+  color: var(--secondery-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--active-text-color);
+}
+
+/* Кнопки */
+
+.filter:hover,
+.filter:focus {
+  background-color: var(--active-text-color);
+  color: var(--text-hero);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.booking {
+  background-color: var(--active-text-color);
+  color: var(--text-hero);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  padding: 10px 32px;
+  border-radius: 4px;
+  min-width: 216px;
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid transparent;
+}
+
+.filter {
+  display: inline-block;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  min-width: 73px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  background-color: var(--team-background-color);
+}
+
+/* Герой главной страницы */
+
+.hero {
+  background-color: #2f303a;
+  text-align: center;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-hero);
+  margin-bottom: 30px;
+}
+
+/* Герой страницы портфолио */
+
+.portfolio-hero {
+  background-color: var(--main-background-color);
+  padding-top: 94px;
+  padding-bottom: 39px;
+}
+
+.image-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+
+.image-text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--secondery-text-color);
+}
+
+.filter-title {
+  margin-bottom: 34px;
+}
+
+/* Преимущества */
+
+.advantage {
+  background-color: var(--main-background-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.advantage-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.advantage-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondery-text-color);
+}
+
+/* Чем мы занимаемся */
+
+.process-title,
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.process {
+  background-color: var(--main-background-color);
+  padding-bottom: 94px;
+}
+
+/* Команда */
+
+.team {
+  background-color: var(--team-background-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team-card {
+  background-color: var(--text-hero);
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.job-title {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--secondery-text-color);
+}
+
+/* Футер */
+
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-top: 20px;
+}
+
+.address-place {
+  color: var(--text-hero);
+  margin-bottom: 9px;
+}
+
+.footer-contacts {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address-mail {
+  margin-bottom: 9px;
+}
+
+.logo-footer {
+  color: var(--text-hero);
+  font-family: 'raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo-footer:hover,
+.logo-footer:focus {
+  color: var(--active-text-color);
+}
+
+/* Убрал подчеркивания и точки со ссылок и списков
+и сбросил отступы */
+
+.link {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Сброс отступов для заголовков и абзацев */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
