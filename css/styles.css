@@ -13,18 +13,41 @@ body {
   color: var(--primary-text-color);
 }
 
+/* Убрал подчеркивания и точки со ссылок и списков
+и сбросил отступы */
+
+.link {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Контейнер */
+
 .container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
 }
 
 /* Хедер */
 .header {
   background-color: var(--text-hero);
+  border-bottom: 1px solid #ECECEC;
+}
+
+.header > .container {
+  display: flex;
+  align-items: center;
 }
 
 /* Навигация */
@@ -36,6 +59,28 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
+.link.logo {
+  margin-right: 93px;
+}
+
+.site-nav > .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.link.nav.current {
+  color: var(--active-text-color);
+}
+
 
 /* Логотип */
 
@@ -57,10 +102,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-.logo-head:hover,
-.logo-head:focus {
-  color: var(--active-text-color);
-}
 
 /* Cсылки контактов хедера */
 
@@ -70,6 +111,10 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.link.contacts:last-child {
+  margin-left: 50px;
 }
 
 .link:hover,
@@ -99,7 +144,6 @@ body {
   padding: 10px 32px;
   border-radius: 4px;
   min-width: 216px;
-  text-align: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 1px solid transparent;
 }
@@ -123,6 +167,7 @@ body {
 .hero {
   background-color: #2f303a;
   text-align: center;
+  height: 600px;
 }
 
 .hero-title {
@@ -133,6 +178,7 @@ body {
   text-transform: uppercase;
   color: var(--text-hero);
   margin-bottom: 30px;
+  padding-top: 200px;
 }
 
 /* Герой страницы портфолио */
@@ -160,16 +206,59 @@ body {
 }
 
 .filter-title {
-  margin-bottom: 34px;
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-item {
+  width: 370px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.card-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.card-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
 }
 
 /* Преимущества */
+
+.hidden {
+  display: none;
+}
 
 .advantage {
   background-color: var(--main-background-color);
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+.advantage-list {
+  display: flex;
+  justify-content: center;
+}
+
+.advantage-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.advantage-item {
+  width: calc(100%/4);
+}
+
+
 .advantage-title {
   font-weight: 700;
   font-size: 14px;
@@ -203,6 +292,16 @@ body {
   padding-bottom: 94px;
 }
 
+.process-list {
+  display: flex;
+  justify-content: center;
+}
+
+.process-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+
 /* Команда */
 
 .team {
@@ -211,11 +310,28 @@ body {
   padding-bottom: 94px;
 }
 
+.team-list {
+  display: flex;
+  justify-content: center;
+}
+
+.team-card:not(:last-child) {
+  margin-right: 30px;
+}
+
+
 .team-card {
+  width: 270px;
+  text-align: center;
   background-color: var(--text-hero);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-name {
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -223,6 +339,7 @@ body {
 }
 
 .job-title {
+  padding-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -267,25 +384,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-.logo-footer:hover,
-.logo-footer:focus {
-  color: var(--active-text-color);
-}
-
-/* Убрал подчеркивания и точки со ссылок и списков
-и сбросил отступы */
-
-.link {
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-}
-
-.list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
 
 /* Сброс отступов для заголовков и абзацев */
 h1,
