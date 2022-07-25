@@ -42,7 +42,7 @@ body {
 /* Хедер */
 .header {
   background-color: var(--text-hero);
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
 
 .header > .container {
@@ -63,7 +63,6 @@ body {
   letter-spacing: 0.02em;
 }
 
-
 .site-nav > .item:not(:last-child) {
   margin-right: 50px;
 }
@@ -81,7 +80,6 @@ body {
 .link.nav.current {
   color: var(--active-text-color);
 }
-
 
 /* Логотип */
 
@@ -102,7 +100,6 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-
 
 /* Cсылки контактов хедера */
 
@@ -259,7 +256,6 @@ body {
   width: calc(100% - 60px / 4);
 }
 
-
 .advantage-title {
   font-weight: 700;
   font-size: 14px;
@@ -302,7 +298,6 @@ body {
   margin-right: 30px;
 }
 
-
 /* Команда */
 
 .team {
@@ -319,7 +314,6 @@ body {
 .team-card:not(:last-child) {
   margin-right: 30px;
 }
-
 
 .team-card {
   width: 270px;
@@ -385,7 +379,6 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-
 
 /* Сброс отступов для заголовков и абзацев */
 h1,
