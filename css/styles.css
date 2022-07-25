@@ -53,6 +53,9 @@ body {
 /* Навигация */
 
 .link.nav {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -60,9 +63,6 @@ body {
   letter-spacing: 0.02em;
 }
 
-.link.logo {
-  margin-right: 93px;
-}
 
 .site-nav > .item:not(:last-child) {
   margin-right: 50px;
@@ -70,6 +70,7 @@ body {
 
 .site-nav {
   display: flex;
+  margin-left: 93px;
 }
 
 .auth-nav {
@@ -255,7 +256,7 @@ body {
 }
 
 .advantage-item {
-  width: calc(100%/4);
+  width: calc(100% - 60px / 4);
 }
 
 
@@ -349,6 +350,7 @@ body {
 /* Футер */
 
 .footer {
+  height: 252px;
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
